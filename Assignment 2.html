@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kumbh Mela</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+  :root{
+    --saffron:#FF9933;
+    --deep-saffron:#e07b1a;
+    --maroon:#7a1f1f;
+    --cream:#FFF8EC;
+    --river-blue:#1d6fa5;
+  }
+  body{
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    background-color: var(--cream);
+    color:#332;
+  }
+  .navbar{
+    background: linear-gradient(90deg, var(--maroon), var(--deep-saffron));
+  }
+  .navbar-brand, .nav-link{
+    color:#fff !important;
+    font-weight:500;
+  }
+  .nav-link:hover{
+    color:#ffe6c7 !important;
+  }
+  .hero{
+    background: linear-gradient(rgba(122,31,31,.75), rgba(224,123,26,.65)),
+                url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color:#fff;
+    padding: 100px 20px;
+    text-align:center;
+  }
+  .hero h1{
+    font-weight:700;
+    letter-spacing:1px;
+  }
+  .section-title{
+    color: var(--maroon);
+    font-weight:700;
+    border-bottom: 3px solid var(--saffron);
+    display:inline-block;
+    padding-bottom:6px;
+    margin-bottom:30px;
+  }
+  section{
+    padding:60px 0;
+  }
+  .info-box{
+    background:#fff;
+    border-left:5px solid var(--saffron);
+    border-radius:8px;
+    padding:20px;
+    height:100%;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+  }
+  .card{
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 14px rgba(0,0,0,.1);
+    transition: transform .25s ease;
+  }
+  .card:hover{
+    transform: translateY(-8px);
+  }
+  .card-img-top{
+    height:200px;
+    object-fit:cover;
+  }
+  .card-title{
+    color: var(--maroon);
+    font-weight:700;
+  }
+  .badge-river{
+    background-color: var(--river-blue);
+  }
+  table thead{
+    background-color: var(--maroon);
+    color:#fff;
+  }
+  .table-hover tbody tr:hover{
+    background-color: #ffe9c7;
+  }
+  .form-section{
+    background: #fff;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+  }
+  .btn-saffron{
+    background-color: var(--saffron);
+    border:none;
+    color:#fff;
+    font-weight:600;
+  }
+  .btn-saffron:hover{
+    background-color: var(--deep-saffron);
+    color:#fff;
+  }
+  footer{
+    background: var(--maroon);
+    color:#fff;
+    padding:30px 0;
+    text-align:center;
+  }
+  footer a{
+    color: var(--saffron);
+    text-decoration:none;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><i class="bi bi-droplet-half"></i> Kumbh Mela</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero" id="home">
+  <div class="container">
+    <h1 class="display-4">Kumbh Mela</h1>
+    <p class="lead">The world's largest peaceful gathering of pilgrims — a sacred confluence of faith, culture and rivers.</p>
+    <a href="#register" class="btn btn-saffron btn-lg mt-2">Register as Pilgrim</a>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Kumbh Mela</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="info-box">
+          <h5><i class="bi bi-clock-history"></i> Ancient Origin</h5>
+          <p>Rooted in Hindu mythology, Kumbh Mela traces back to the legend of Samudra Manthan, the churning of the ocean for the nectar of immortality.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-box">
+          <h5><i class="bi bi-people"></i> Massive Gathering</h5>
+          <p>Held once every 12 years at each site, Kumbh Mela draws tens of millions of devotees, sadhus, and tourists from across the globe.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-box">
+          <h5><i class="bi bi-globe-asia-australia"></i> UNESCO Heritage</h5>
+          <p>Recognized by UNESCO as an Intangible Cultural Heritage of Humanity for its unmatched scale and spiritual significance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="locations" class="bg-white">
+  <div class="container">
+    <h2 class="section-title">Four Sacred Locations</h2>
+    <div class="row g-4">
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1687511741630-18fe16e8ed7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhhcmlkd2FyJTIwa3VtYmhtZWxhfGVufDB8fDB8fHww class="card-img-top" alt="Haridwar">
+          <div class="card-body">
+            <h5 class="card-title">Haridwar</h5>
+            <span class="badge badge-river mb-2">River Ganga</span>
+            <p class="card-text">Gateway to the gods, on the banks of the holy Ganga in Uttarakhand.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Prayagraj">
+          <div class="card-body">
+            <h5 class="card-title">Prayagraj</h5>
+            <span class="badge badge-river mb-2">Triveni Sangam</span>
+            <p class="card-text">Confluence of Ganga, Yamuna and the mythical Saraswati rivers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/880969326/photo/ramkund-in-nashik-india-with-dramatic-colorful-clouds-in-the-sky.webp?a=1&b=1&s=612x612&w=0&k=20&c=5M68KY5TFRus6wBSQ-6ht5fQ_tnnVdINZZon5EkdzHY=" class="card-img-top" alt="Nashik">
+          <div class="card-body">
+            <h5 class="card-title">Nashik</h5>
+            <span class="badge badge-river mb-2">River Godavari</span>
+            <p class="card-text">Held at Trimbakeshwar and Ramkund along the sacred Godavari.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Ujjain">
+          <div class="card-body">
+            <h5 class="card-title">Ujjain</h5>
+            <span class="badge badge-river mb-2">River Shipra</span>
+            <p class="card-text">Home of the Mahakaleshwar Jyotirlinga on the banks of the Shipra.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="container">
+    <h2 class="section-title">Shahi Snan Schedule</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover bg-white">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Location</th>
+            <th>River</th>
+            <th>Cycle</th>
+            <th>Major Bathing Day</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Haridwar</td>
+            <td>Ganga</td>
+            <td>Every 12 years</td>
+            <td>Makar Sankranti</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Prayagraj</td>
+            <td>Ganga-Yamuna-Saraswati</td>
+            <td>Every 12 years</td>
+            <td>Mauni Amavasya</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Nashik</td>
+            <td>Godavari</td>
+            <td>Every 12 years</td>
+            <td>Simhastha Parva</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Ujjain</td>
+            <td>Shipra</td>
+            <td>Every 12 years</td>
+            <td>Simhastha Parva</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="register" class="bg-white">
+  <div class="container">
+    <h2 class="section-title">Pilgrim Registration Form</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form class="form-section">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Age</label>
+              <input type="number" class="form-control" placeholder="Enter your age" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Contact Number</label>
+              <input type="tel" class="form-control" placeholder="10-digit mobile number" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Preferred Location</label>
+              <select class="form-select" required>
+                <option selected disabled value="">Choose location</option>
+                <option>Haridwar</option>
+                <option>Prayagraj</option>
+                <option>Nashik</option>
+                <option>Ujjain</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Date of Visit</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Address</label>
+              <textarea class="form-control" rows="3" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label" for="terms">
+                  I agree to abide by the guidelines set for the event.
+                </label>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-saffron btn-lg px-5">Submit Registration</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="mb-1"><i class="bi bi-droplet-half"></i> Kumbh Mela &copy; 2026</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

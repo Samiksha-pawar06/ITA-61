@@ -1,0 +1,122 @@
+{
+  "nextId": 17,
+  "entries": [
+    {
+      "id": 1,
+      "type": "workout",
+      "name": "Running",
+      "value": 20,
+      "date": "2026-10-09"
+    },
+    {
+      "id": 2,
+      "type": "meal",
+      "name": "salad",
+      "value": 150,
+      "date": "2026-10-09"
+    },
+    {
+      "id": 3,
+      "type": "water",
+      "name": "water",
+      "value": 10,
+      "date": "2026-10-09"
+    },
+    {
+      "id": 4,
+      "type": "weight",
+      "name": "weight",
+      "value": 40,
+      "date": "2026-10-09"
+    },
+    {
+      "id": 5,
+      "type": "weight",
+      "name": "weight",
+      "value": 36,
+      "date": "2026-10-01"
+    },
+    {
+      "id": 6,
+      "type": "workout",
+      "name": "Yoga",
+      "value": 15,
+      "date": "2026-10-01"
+    },
+    {
+      "id": 7,
+      "type": "meal",
+      "name": "Milk",
+      "value": 100,
+      "date": "2026-10-01"
+    },
+    {
+      "id": 8,
+      "type": "water",
+      "name": "water",
+      "value": 7,
+      "date": "2026-10-01"
+    },
+    {
+      "id": 9,
+      "type": "workout",
+      "name": "Walking",
+      "value": 15,
+      "date": "2026-10-02"
+    },
+    {
+      "id": 10,
+      "type": "meal",
+      "name": "Milk",
+      "value": 200,
+      "date": "2026-10-02"
+    },
+    {
+      "id": 11,
+      "type": "water",
+      "name": "water",
+      "value": 8,
+      "date": "2026-10-02"
+    },
+    {
+      "id": 12,
+      "type": "weight",
+      "name": "weight",
+      "value": 40,
+      "date": "2026-10-02"
+    },
+    {
+      "id": 13,
+      "type": "weight",
+      "name": "weight",
+      "value": 43,
+      "date": "2026-10-03"
+    },
+    {
+      "id": 14,
+      "type": "workout",
+      "name": "Yoga",
+      "value": 15,
+      "date": "2026-10-03"
+    },
+    {
+      "id": 15,
+      "type": "water",
+      "name": "water",
+      "value": 5,
+      "date": "2026-10-03"
+    },
+    {
+      "id": 16,
+      "type": "meal",
+      "name": "Salad",
+      "value": 100,
+      "date": "2026-10-03"
+    }
+  ],
+  "goals": {
+    "calories": 1000,
+    "water": 10,
+    "workoutMinutes": 25
+  }
+}

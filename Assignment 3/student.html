@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob b1"></div><div class="blob b2"></div>
+
+    <main>
+        <h1>🎓 Result Manager</h1>
+
+        <!-- Topper banner -->
+        <section class="topper" id="topper">Add students to find the topper 🏆</section>
+
+        <div class="layout">
+            <!-- Form -->
+            <form class="card" id="form">
+                <h2>Add Student</h2>
+                <input id="name" placeholder="👤 Name" required>
+                <input id="roll" placeholder="🔢 Roll No" required>
+                <div class="grid">
+                    <input type="number" id="m1" placeholder="Maths" min="0" max="100" required>
+                    <input type="number" id="m2" placeholder="Science" min="0" max="100" required>
+                    <input type="number" id="m3" placeholder="English" min="0" max="100" required>
+                    <input type="number" id="m4" placeholder="Computer" min="0" max="100" required>
+                </div>
+                <button type="submit">Add Result ✨</button>
+                <small>Marks are out of 100 each</small>
+            </form>
+
+            <!-- Table -->
+            <div class="card">
+                <h2>Records <span id="count"></span></h2>
+                <div class="scroll">
+                    <table>
+                        <thead>
+                            <tr><th>Rank</th><th>Name</th><th>Roll</th><th>Total</th><th>%</th><th>Grade</th><th></th></tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+                <p id="empty">No records yet 🪪</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="student.js"></script>
+</body>
+</html>
